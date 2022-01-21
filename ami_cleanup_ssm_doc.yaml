@@ -2,7 +2,7 @@ description: |-
   This document deletes AMIs older than X number of days 
   By default x is 60 days, but you can change it
   In line 8, please put in there the role with proper policies attached
-  In line 36, put in there the owner ID of the images you have in your AWS account or set it to self to refer to the images owned by you 
+  In line 36, put in there the owner ID of the images you have in your AWS account or set it to self to refer to the images explicitly owned by you 
   It uses boto3  
 schemaVersion: '0.3'
 assumeRole: ''
