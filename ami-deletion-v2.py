@@ -22,10 +22,10 @@ def lambda_handler(event, context):
         yourdate = parser.parse(creationdate)                  #parse its created date under the following variable 
         today = datetime.now()                                 #hold today's date under the following variable 
         
-        diff = (today - yourdate.replace(tzinfo=None)).days    #make a math
+        diff = (today - yourdate.replace(tzinfo=None)).days    #
         
         
-        #if (diff >= 60) remove absolutely all the AMIs which are older than 60 days and keep all the AMIs before 60 days
+        #if (diff >= 60) remove absolutely all the AMIs, which are older than 60 days and keep all the AMIs before 60 days
         #if (diff =< 60) remove all the AMIs only up to 60 days and keep anything after
         if (diff >= 60 ):
             print(f"Below amis are older than 60 days {amiid}")
